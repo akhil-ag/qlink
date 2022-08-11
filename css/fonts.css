@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "VAGRoundedBold";
+    src: url("../fonts/VAGRoundedBold.woff") format('woff');
+}
+
+@font-face {
+    font-family: "OpenSans-Semibold";
+    src: url("../fonts/OpenSans-Semibold.woff") format('woff');
+}

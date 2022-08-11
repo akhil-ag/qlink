@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.h-md-100vh {
+    height: 100%;
+}
+
+.nav-link {
+    font-family: VAGRoundedBold;
+    color: #333333;
+    font-size: 14px;
+    position: relative;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.nav-link::after {
+    content: '';
+    display: none;
+    width: 100%;
+    height: 2px;
+    background-color: #6900b4;
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    transform: translateY(5px);
+}
+
+.nav-link:hover {
+    color: #6900b4 !important;
+    transition: all 1s ease;
+}
+
+.nav-link:hover::after {
+    display: inline-block;
+    animation: naveffect 1s forwards;
+}
+
+@keyframes naveffect {
+    100% {
+        bottom: -4px;
+        left: 0px;
+    }
+}
+
+.home {
+    background-image: url('../images/bg_1.png');
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    background-position: -125px;
+    background-color: #4c0080;
+}
+
+.home-wrapper {
+    padding-top: 76px !important;
+    padding-bottom: 30px !important;
+}
+
+.home-text {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.home-h2 {
+    font-family: VAGRoundedBold;
+    color: #9200c9;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.home-prehead {
+    font-family: OpenSans-Semibold;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.home-logo-img {
+    -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.80));
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.home-logo-img:hover {
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(10, 20, 161, 0.507));
+}
+
+.home-socialicons div {
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.home-socialicons div:last-child {
+    margin-right: 0px;
+}
+
+.features {
+    background: url("../images/bg_2.png")no-repeat center center fixed;
+    background-size: 100% 120%;
+    background-color: #111111;
+    position: relative;
+    background-position-y: 0%;
+}
+
+.features-wrapper {
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+}
+
+.features-heading {
+    font-family: VAGRoundedBold;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+
+.features-head-icon {
+    top: -16px;
+    right: 0px;
+}
+
+.features-hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.features-bottom {
+    padding-top: 20px;
+}
+
+.features-bottom-image {
+    height: 90px;
+}
+
+.features-bottom-text {
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.features-bottom-cta {
+    font-family: VAGRoundedBold;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #9400ca;
+    border-radius: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.features-ctaimg {
+    height: 12px;
+}
+
+.whyqlink {
+    background-image: url('../images/bg_3.png');
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    background-position: -125px;
+    background-color: #ffffff;
+}
+
+.whyqlink-wrapper {
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+}
+
+.whyqlink-head-icon {
+    top: -18px;
+    right: 0px;
+}
+
+.whyqlink-heading {
+    font-family: VAGRoundedBold;
+    color: #333333;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.whyqlink-prehead {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.whyqlink-modhead {
+    font-family: VAGRoundedBold;
+    color: #8500c2;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.whyqlink-premodhead {
+    font-family: VAGRoundedBold;
+    color: #333333;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.whyqlink-content {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.pt-whyqlink-content {
+    padding-top: 20px;
+}
+
+.whyqlink-bottom {
+    padding-top: 20px;
+}
+
+.whyqlink-bottom p {
+    font-family: VAGRoundedBold;
+    color: #aaaaaa;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.whyqlink-bottom span {
+    color: #333333;
+}
+
+.timeline-box {
+    background: url("../images/bg_4.png")no-repeat center center fixed;
+    background-size: 100% 100%;
+    background-color: #111111;
+    position: relative;
+    background-position-y: 0%;
+    background-color: #4c0080;
+}
+
+.timeline-wrapper {
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+}
+
+.timeline-heading {
+    font-family: VAGRoundedBold;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.timeline-head-icon {
+    top: -18px;
+    right: -18px;
+}
+
+
+/* timeline */
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: white;
+    top: 10px;
+    bottom: 60px;
+    left: 50%;
+}
+
+
+/* Container around content */
+
+.timeline-container {
+    padding: 0px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-container-l {
+    padding: 0px 35px 0px 0px;
+}
+
+.timeline-container-r {
+    padding: 0px 0px 0px 35px;
+}
+
+
+/* The circles on the timeline */
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: -8px;
+    background-color: #6c00b5;
+    border: 2px solid #ffffff;
+    top: 8px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-container.active::after {
+    width: 22px;
+    height: 22px;
+    background-color: #9400ca;
+    border: 6px solid #ffffff;
+    right: -12px;
+    top: 4px;
+}
+
+.timeline-container.right.active::after {
+    left: -10px;
+}
+
+
+/* Place the container to the left */
+
+.left {
+    left: 0;
+}
+
+
+/* Place the container to the right */
+
+.right {
+    left: 50%;
+}
+
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+    left: -6px;
+}
+
+
+/* The actual content */
+
+.timeline-content {
+    background-color: transparent;
+    position: relative;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media screen and (max-width: 767px) {
+    .timeline {
+        width: auto;
+    }
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+        bottom: 92px;
+    }
+    /* Full-width containers */
+    .timeline-container {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 25px;
+    }
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+    .timeline-container.left.active::after,
+    .timeline-container.right.active::after {
+        left: 21px !important;
+    }
+}
+
+
+/* timeline end */
+
+.timeline-cta {
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+    background-color: #37009a;
+    font-family: VAGRoundedBold;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.timeline-content>p {
+    font-family: OpenSans-Semibold;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.timeline-container.upcoming .timeline-cta {
+    background-color: #37009a;
+    color: #ffffff;
+}
+
+.timeline-container.active .timeline-cta {
+    background-color: #ffffff;
+    color: #9000c7;
+}
+
+.timeline-container.finished .timeline-cta {
+    background-color: #9400ca;
+    color: #ffffff;
+}
+
+.ourteam {
+    background-image: url('../images/bg_5.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #ffffff;
+}
+
+.ourteam-heading {
+    font-family: VAGRoundedBold;
+    color: #333333;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.ourteam-head-icon {
+    top: -18px;
+    right: -18px;
+}
+
+.ourteam-wrapper {
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+}
+
+.ourteam-width {
+    width: 100%;
+}
+
+.ourteam-prehead {
+    padding-bottom: 60px;
+    font-family: VAGRoundedBold;
+    color: #9400ca;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.ourteam-profile {
+    background-color: #ffffff;
+}
+
+.ourteam-profilepic {
+    width: 100%;
+    top: -30px;
+}
+
+.profilepic-bg {
+    background-color: #7600ba;
+    border-radius: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ourteam-profilename {
+    padding-top: 160px;
+    padding-bottom: 5px;
+    font-family: VAGRoundedBold;
+    color: #333333;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.ourteam-country {
+    padding-bottom: 15px;
+    font-family: VAGRoundedBold;
+    color: #aaaaaa;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.ourteam-text {
+    padding-bottom: 20px;
+    font-family: OpenSans-Semibold;
+    color: #333333;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 576px) {
+    .home {
+        background-size: 100% 100%;
+        background-position: 0px;
+    }
+    .home-h2 {
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 40px;
+    }
+    .home-text {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    .timeline-container {
+        background-size: 100% 100%;
+        background-position: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-wrapper {
+        padding-top: 80px !important;
+        padding-bottom: 50px !important;
+    }
+    .features-hero-image {
+        width: 500px;
+        height: auto;
+    }
+    .features-bottom {
+        padding-top: 50px;
+    }
+    .features-bottom-image {
+        height: 100px;
+    }
+    .features-bottom-text {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .whyqlink-content {
+        width: 100%;
+        padding-top: 40px;
+        width: 700px;
+    }
+    .pt-whyqlink-content {
+        padding-top: 90px;
+    }
+    .whyqlink-bottom {
+        padding-top: 60px;
+    }
+    .timeline-wrapper {
+        padding-top: 80px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .h-md-100vh {
+        height: 100vh;
+    }
+    .features-hero-image {
+        width: 600px;
+        height: auto;
+    }
+    .features-wrapper {
+        padding-top: 70px !important;
+        padding-bottom: 80px !important;
+    }
+    .whyqlink-wrapper {
+        padding-top: 60px !important;
+        padding-bottom: 40px !important;
+    }
+    .features-bottom {
+        width: 700px;
+    }
+    .features-bottom-image {
+        height: 114px !important;
+    }
+    .ourteam-width {
+        width: 700px;
+        ;
+    }
+}
